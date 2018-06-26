@@ -12,5 +12,6 @@ lazy val root = project
       "org.scala-js"  %%% "scalajs-dom"    % "0.9.5",
       "org.scalatest" %%% "scalatest"      % "3.0.5"    % "test"
     ),
+    jsEnv := new org.scalajs.jsenv.jsdomnodejs.JSDOMNodeJSEnv,
     scalaJSUseMainModuleInitializer := true
   )
